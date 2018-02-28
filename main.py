@@ -198,7 +198,7 @@ class MyModel(nn.Module):
             # nn.LeakyReLU(inplace=True),
 
             nn.Conv1d(1024, 1024, 3, padding=1),
-            nn.BatchNorm1d(512),
+            nn.BatchNorm1d(1024),
             nn.LeakyReLU(inplace=True),
             nn.Conv1d(1024, 1024, 3, padding=1),
             nn.BatchNorm1d(1024),
