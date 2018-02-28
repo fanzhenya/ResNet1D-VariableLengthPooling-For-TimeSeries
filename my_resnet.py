@@ -4,19 +4,6 @@ import math
 
 from variable_length_pooling import VariableLengthPooling
 
-class VariableLengthPooling(nn.Module):
-    def forward(self, x, **kwargs):
-        bounds = kwargs.get("bounds")
-        # print("--------x--------", x.size(), x)
-        # print("--------bounds--------", bounds.size(), bounds)
-        cnt = torch.sum(bounds, dim=1)
-        # print("--------cnt--------", cnt.size(), cnt)
-        # print("--------bmm--------", torch.bmm(x, bounds).size(), torch.bmm(x, bounds))
-        out = torch.bmm(x, bounds) / cnt
-        # print("--------out--------", out.size(), out)
-        return out
-
-
 def conv3x3(in_planes, out_planes, stride=1):
     """3x3 convolution with padding"""
     return nn.Conv2d(in_planes, out_planes, kernel_size=(5, 3), stride=(stride, 1),
