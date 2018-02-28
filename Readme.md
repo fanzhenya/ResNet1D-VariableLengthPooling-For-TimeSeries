@@ -6,7 +6,8 @@ which is a class project for CMU 11-785 course.
 The reason for sharing is that I found very resource online for the below two topics.
 It will be helpful for others who has similar problem.
 
-1. Pooling from variable length of activations. This is useful for dealing features of various length in time dimension.
+## Pooling from variable length of activations
+This is useful for dealing features of various length in time dimension.
 E.g., phonemes in speech data.
 
 ```
@@ -33,9 +34,10 @@ Time             --------------------------->
 
 ```
 
-2. ResNet for time series data
+## ResNet for time series data
 
-Vanilla ResNet uses Conv2D for image data. However this architecture may be useful for deep Conv1D networks as well.
+Vanilla ResNet uses Conv2D for image data. However this architecture may be useful for deep Conv1D networks as well. 
+
 I tried two approaches in my code:
 
 - use rectangular filters (different H, W) directly in ResNet2D
