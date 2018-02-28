@@ -35,7 +35,7 @@ Time             --------------------------->
 
 2. ResNet for time series data
 
-Vanilla ResNet used Conv2D for image data. However this architecture may be useful for deep Conv1D networks.
+Vanilla ResNet uses Conv2D for image data. However this architecture may be useful for deep Conv1D networks as well.
 I tried two approaches in my code:
 
 - use rectangular filters (different H, W) directly in ResNet2D
