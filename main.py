@@ -387,7 +387,7 @@ def predict(args, csv_fpath, weights_fpath):
         writer = csv.DictWriter(csvfile, fieldnames=['Id', 'Label'])
         writer.writeheader()
         cnt = 0
-        for batch, (frames, bounds, _) in enumerate(test_loader):
+        for batch, (frames, bounds, _, _) in enumerate(test_loader):
             if batch % args.log_interval == 0:
                 print("batch", batch)
             yhat = predict_batch(model, frames, bounds, args)
