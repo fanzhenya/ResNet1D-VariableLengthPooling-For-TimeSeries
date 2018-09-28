@@ -1,10 +1,4 @@
-# Resnet 1D and Variable Length Pooling for Speech Analysis
-
-This repo is the code I used during the Kaggle Contest https://www.kaggle.com/c/11785-hw2pt2/,
-which is a class project for CMU 11-785 course.
-
-The reason for sharing is that I found very resource online for the below two topics.
-It will be helpful for others who has similar problem.
+# Resnet 1D and Variable Length Pooling for time series data
 
 ## Pooling from variable length of activations
 This is useful for dealing features of various length in time dimension.
@@ -49,6 +43,5 @@ It depends on your specific problem to answer which approach is better.
 
 Some code are copied from pytorch official examples and CMU classes. Credits to the original authors.
 
-- https://github.com/cmudeeplearning11785/deep-learning-tutorials/blob/master/recitation-4/pytorch-mnist-cnn-example.py
 - https://github.com/pytorch/examples/tree/master/mnist
 - ...
